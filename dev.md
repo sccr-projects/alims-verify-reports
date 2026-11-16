@@ -1,11 +1,7 @@
-# ALiMS DEV · Gagal
+# ALiMS DEV · Berjalan
 
-CircleCI job **#15** · commit `573d1aad478a`
+CircleCI job **#16** · commit `839d538e52d6`
 
-**754 lulus · 1 gagal/error · 0 dilewati.**
+Menunggu hasil akhir verify.
 
-## Tes yang gagal
-
-- `PublicVerifyReportProbeTest::test_public_report_displays_http_status_mismatch` — HTTP yang diharapkan 403, yang diterima 200.
-
-<!-- circleci-build=15 final=1 -->
+<!-- circleci-build=16 final=0 -->
