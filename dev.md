@@ -1,7 +1,7 @@
-# ALiMS DEV · Lulus
+# ALiMS DEV · Gagal
 
-GitHub Actions run **#43829391511** · commit `7271c7f7a92e`
+GitHub Actions run **#44006199824** · commit `eda6956342bd`
 
-**754 lulus · 0 gagal/error · 0 dilewati.**
+Verify berhenti tanpa kegagalan tes yang tercatat di JUnit. Periksa langkah setup, perintah tes, atau build frontend di GitHub Actions.
 
-<!-- actions-run=43829391511 final=1 -->
+<!-- actions-run=44006199824 final=1 -->
