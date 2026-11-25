@@ -1,7 +1,178 @@
 # ALiMS DEV · Gagal
 
-GitHub Actions run **#45564656737** · commit `fa1ebbc643e7`
+GitHub Actions run **#45565220698** · commit `cdd6611dc95f`
 
-Verify berhenti tanpa kegagalan tes yang tercatat di JUnit. Periksa langkah setup, perintah tes, atau build frontend di GitHub Actions.
+**616 lulus · 168 gagal/error · 0 dilewati.**
 
-<!-- actions-run=45564656737 final=1 -->
+## Tes yang gagal
+
+- `CatalogPatternConcurrencyTest::test_parallel_item_creation_allocates_distinct_codes_and_skips_existing_codes` — Pemeriksaan data database gagal.
+- `CatalogQualityBatchTest::test_portable_catalog_maps_codes_and_retries_without_duplicate_records` — Pemeriksaan data database gagal.
+- `CatalogQualityBatchTest::test_portable_csv_preview_and_job_use_same_contract` — Pemeriksaan data database gagal.
+- `CataloguingDetailsTest::test_duplicate_contribution_rolls_back_entire_save` — Pemeriksaan data database gagal.
+- `DigitalLendingConcurrencyTest::test_two_connections_cannot_allocate_the_same_license_seat` — Pemeriksaan data database gagal.
+- `DigitalLendingTest::test_catalog_request_and_action_forms_use_public_identifiers` — Pemeriksaan data database gagal.
+- `DigitalLendingTest::test_digital_report_matches_owned_transactions_and_enforces_access` — Jumlah yang diharapkan 1, yang ditemukan 3.
+- `DigitalLendingTest::test_fifo_exact_release_and_idempotence` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `DigitalLendingTest::test_self_review_rights_validation_and_missing_policy_are_rejected` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `FoundationTest::test_local_admin_command_refuses_nonlocal_environment` — Pemeriksaan data database gagal.
+- `LegacyActivityHistoryTest::test_history_import_is_reconciled_idempotent_and_does_not_change_live_inventory` — Pemeriksaan data database gagal.
+- `LegacyArchivesTest::test_archives_are_encrypted_and_deleted_items_never_become_active_stock` — Pemeriksaan data database gagal.
+- `LegacyCatalogServicesTest::test_metadata_masters_queue_and_bookmarks_reconcile_without_notifications` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `LegacyCatalogServicesTest::test_member_bookmarks_survive_binding_and_remain_scoped_in_both_languages` — Pemeriksaan isi respons atau koleksi gagal.
+- `LegacyCatalogServicesTest::test_orphans_duplicate_pairs_unreviewed_state_and_bad_dates_block_everything` — Pemeriksaan data database gagal.
+- `LegacyCatalogServicesTest::test_new_reference_codes_and_fifo_are_usable_after_review` — Nilai atau tipe berbeda dari yang diharapkan.
+- `LegacyDeletedLoansTest::test_closed_loans_and_ledger_reconcile_without_restoring_inventory` — Pemeriksaan data database gagal.
+- `LegacyDeletedLoansTest::test_member_and_staff_history_and_exports_work_in_both_languages` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_imports_commit_one_mapping_and_one_copy` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_extended_imports_create_one_claim_and_preserve_history` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_all_domain_imports_preserve_file_history_and_ledger` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_batch_confirmations_apply_only_once` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_catalog_service_batches_preserve_queue_and_bookmarks` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_history_batches_do_not_duplicate_visits_or_inventory` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_archive_batches_preserve_private_records_and_removed_items_once` — Pemeriksaan data database gagal.
+- `LegacyImportConcurrencyTest::test_parallel_deleted_loan_imports_preserve_one_ledger_and_no_claim` — Pemeriksaan data database gagal.
+- `LegacyMemberRoundTripTest::test_standard_legacy_import_and_extended_export_round_trip_every_profile_value` — Nilai atau tipe berbeda dari yang diharapkan.
+- `LegacyMemberRoundTripTest::test_credentials_invalid_gender_and_traversal_are_never_persisted` — Pemeriksaan data database gagal.
+- `LegacyMemberRoundTripTest::test_duplicate_rows_and_invalid_dates_block_confirmation` — Pemeriksaan data database gagal.
+- `LegacyMemberRoundTripTest::test_revoked_member_permission_hides_previous_preview` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_all_domains_resume_reconcile_and_preserve_private_files_and_balances` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_history_conflict_is_not_guessed_or_imported_twice` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_financial_preflight_rejects_unbalanced_overpaid_and_invalid_reversed_entries` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_source_file_errors_and_unsafe_paths_do_not_write` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_reconcile_detects_file_and_authority_link_drift` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_ledger_failure_is_atomic_and_retry_preserves_verified_file` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_asset_database_failure_leaves_reusable_file_without_partial_metadata` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_new_operational_payment_is_reported_as_drift_and_never_overwritten` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_authority_orphan_and_duplicate_links_fail_before_any_write` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_finance_permission_is_required_even_for_a_partial_source_manifest` — Pemeriksaan data database gagal.
+- `LegacyMigrationDomainsTest::test_leading_zero_loan_ids_are_not_merged_by_numeric_comparison` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_dry_run_resume_idempotency_and_independent_reconciliation` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_reconcile_detects_field_drift_even_if_checkpoint_hash_was_replaced` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_claim_drift_and_extra_mapping_fail_without_automatic_repair` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_conflicting_member_and_orphan_policy_overlap_are_preflight_failures` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_invalid_dates_unknown_fields_and_duplicate_history_are_rejected` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_imported_active_loan_returns_and_returned_history_replays_safely` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_database_failure_rolls_back_whole_loan_and_resumes_from_prior_checkpoint` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_command_reconcile_failure_and_success_exit_codes` — Pemeriksaan data database gagal.
+- `LegacyMigrationTest::test_catalog_role_cannot_import_or_reconcile_member_loan_data` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_raw_financial_and_file_adapters_apply_atomically_and_reconcile_idempotently` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_ambiguous_financial_rows_and_mappings_are_quarantined` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_missing_duplicate_unsafe_and_corrupt_files_block_the_batch` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_shared_file_bindings_remain_distinct_and_never_publish_legacy_access` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_file_tampering_after_preview_prevents_any_operational_writes` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_target_file_drift_is_detected_by_reconciliation` — Pemeriksaan data database gagal.
+- `LegacyRawAdaptersTest::test_missing_raw_table_cannot_hide_profile_and_issues_render_in_both_languages` — Pemeriksaan data database gagal.
+- `LibraryActivityConcurrencyTest::test_parallel_receipts_and_visit_retries_use_independent_postgres_connections` — Pemeriksaan data database gagal.
+- `LibraryActivityTest::test_visit_retry_anonymous_data_validation_and_void_audit` — Pemeriksaan data database gagal.
+- `LibraryActivityTest::test_visitor_identity_origin_purpose_and_member_lookup_are_preserved` — Pemeriksaan data database gagal.
+- `LibraryActivityTest::test_acquisition_is_atomic_exact_and_retry_safe` — Pemeriksaan data database gagal.
+- `LibraryActivityTest::test_acquisition_validation_zero_cost_unknown_value_and_date_conflicts` — Pemeriksaan data database gagal.
+- `LibraryActivityTest::test_void_releases_receipt_without_deleting_copies_and_preserves_later_catalog_date` — Pemeriksaan data database gagal.
+- `LibraryReportsTest::test_collection_counts_do_not_multiply_titles_and_exclude_holds_from_availability` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `LibraryReportsTest::test_only_finalized_stocktake_assessments_enter_period_results` — Pemeriksaan data database gagal.
+- `MarcImportConcurrencyTest::test_parallel_confirmation_and_duplicate_batches_create_one_catalogue_record` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_preview_is_read_only_localized_escaped_and_confirmation_round_trips` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_malformed_xml_entities_namespace_and_marc8_are_rejected` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_semantic_validation_blocks_entire_batch` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_duplicates_and_stale_previews_cannot_create_duplicate_catalogue_entries` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_permissions_owner_and_revocation_are_checked_on_every_entrypoint` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_batch_rolls_back_when_authority_creation_conflicts` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_serial_profile_copyright_and_source_record_types` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_checksum_and_second_record_failure_are_atomic` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_contributor_order_survives_existing_authority_ids_and_round_trip` — Pemeriksaan data database gagal.
+- `MarcImportTest::test_utf8_iso2709_directory_and_round_trip` — Nilai atau tipe berbeda dari yang diharapkan.
+- `MemberCsvVariantsPhotosTest::test_photo_dry_run_apply_retry_and_private_download` — Pemeriksaan data database gagal.
+- `MemberCsvVariantsPhotosTest::test_existing_photo_conflict_rolls_back_entire_batch_and_files` — Pemeriksaan data database gagal.
+- `MemberCsvVariantsPhotosTest::test_unquoted_source_and_storage_failure_do_not_corrupt_profiles` — Pemeriksaan data database gagal.
+- `MemberNumberConcurrencyTest::test_concurrent_members_receive_unique_numbers` — Pemeriksaan data database gagal.
+- `MemberNumberingTest::test_settings_need_permission_and_review_and_are_bilingual` — Pemeriksaan data database gagal.
+- `MemberNumberingTest::test_staff_can_leave_member_number_empty_without_prior_numbering_setup` — Nilai atau tipe berbeda dari yang diharapkan.
+- `MemberNumberingTest::test_disabled_configuration_keeps_legacy_fallback` — Nilai atau tipe berbeda dari yang diharapkan.
+- `MemberServicesConcurrencyTest::test_parallel_basket_retries_and_dispatch_do_not_duplicate` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_saved_lists_are_private_idempotent_and_do_not_reserve` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_basket_submit_is_atomic_and_retry_safe` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_basket_failure_rolls_back_every_reservation_and_outbox_event` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_basket_cannot_submit_a_title_outside_own_basket` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_notifications_are_localized_private_and_deduplicated` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_failed_projection_backoff_and_dead_letter_do_not_stop_other_events` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_siakad_adapter_is_explicitly_unavailable_without_affecting_member_pages` — Pemeriksaan data database gagal.
+- `MemberServicesTest::test_reminders_deduplicate_and_discard_changed_or_returned_loans` — Pemeriksaan data database gagal.
+- `MemberSsoProvisioningTest::test_imported_members_are_discovered_by_scheduled_synchronization` — Nilai atau tipe berbeda dari yang diharapkan.
+- `MemberSsoProvisioningTest::test_add_member_search_excludes_existing_members_and_checks_next_sso_page` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_preview_excludes_email_conflicts_and_rejects_tampered_selection` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `MemberSyncTest::test_member_number_conflict_is_validation_not_database_failure` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_number_conversion_requires_preview_selection_confirmation_and_fresh_nim` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_student_number_conversion_preserves_member_and_rejects_stale_or_conflicting_preview` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_biodata_fill_is_idempotent_and_preserves_membership_and_existing_fields` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_directory_sync_fills_biodata_for_new_and_existing_members_without_relinking` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_invalid_biodata_and_closed_members_are_not_modified` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_bulk_sync_traverses_pages_and_keeps_existing_members_unchanged` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `MemberSyncTest::test_bulk_sync_permissions_policy_languages_and_external` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_bulk_sync_outage_pauses_without_losing_pending_account` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `MemberSyncTest::test_preview_import_repeat_and_local_status_are_preserved` — Pemeriksaan data database gagal.
+- `MemberSyncTest::test_preview_is_required_and_members_cannot_list_or_import` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `MemberSyncTest::test_conflicting_email_and_changed_affiliation_do_not_create_members` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `MigrationWorkbenchTest::test_xlsx_roundtrip_preserves_ledger_and_historical_transactions` — Pemeriksaan data database gagal.
+- `MigrationWorkbenchTest::test_failed_ledger_rolls_back_the_entire_batch_and_corrected_retry_succeeds` — Pemeriksaan data database gagal.
+- `OperationalReadinessTest::test_quality_checks_are_read_only_private_and_report_missing_files` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `OperationalReadinessTest::test_legacy_dry_run_resume_and_rerun_preserve_mapping_and_identifiers` — Pemeriksaan data database gagal.
+- `OperationalReadinessTest::test_legacy_conflicts_never_overwrite_data` — ErrorException — detail nilai dan stack trace tersedia di log privat.
+- `OperationalReadinessTest::test_legacy_orphans_and_invalid_rows_abort_preflight_without_writes` — Pemeriksaan data database gagal.
+- `Pbi712CompletionTest::test_inactive_references_are_not_choices_and_cannot_be_added_but_old_links_survive` — Pemeriksaan data database gagal.
+- `PhaseOneTest::test_catalog_creates_and_updates_with_audit` — Pemeriksaan data database gagal.
+- `PhaseOneTest::test_csv_preview_import_and_replay_are_atomic` — Pemeriksaan data database gagal.
+- `PhaseOneTest::test_csv_duplicate_preview_and_failed_batch_no_partial_writes` — Pemeriksaan data database gagal.
+- `PhaseOneTest::test_csv_job_rechecks_revoked_permission` — Pemeriksaan data database gagal.
+- `PrintWorkflowTest::test_generator_authorization_codes_and_no_database_mutation` — Pemeriksaan data database gagal.
+- `ReadingStationConcurrencyTest::test_two_stations_cannot_allocate_the_same_license_seat` — Pemeriksaan data database gagal.
+- `ReservationConcurrencyTest::test_parallel_requests_and_cancel_versus_checkout_preserve_claims` — Pemeriksaan data database gagal.
+- `ReservationConcurrencyTest::test_return_and_new_reservation_race_allocates_returned_copy` — Pemeriksaan data database gagal.
+- `ReservationTest::test_v31_requires_unavailable_copy_and_expires_at_next_service_closing_without_fine` — Pemeriksaan data database gagal.
+- `ReservationTest::test_v31_zero_reservation_limit_does_not_use_demo_fallback` — Pemeriksaan data database gagal.
+- `ReservationTest::test_staff_table_filters_sorts_and_preserves_member_scope` — Pemeriksaan data database gagal.
+- `ReservationTest::test_fifo_return_ready_and_fulfillment` — Pemeriksaan data database gagal.
+- `ReservationTest::test_cancel_and_expiry_allocate_next_without_duplicate_events` — Pemeriksaan data database gagal.
+- `ReservationTest::test_dedup_retry_quota_and_member_scope` — Pemeriksaan data database gagal.
+- `ReservationTest::test_suspended_member_hold_is_released_and_bilingual_views_render` — Pemeriksaan data database gagal.
+- `ReservationTest::test_expired_hold_is_rechecked_at_checkout_and_own_loan_rejected` — Pemeriksaan data database gagal.
+- `ReservationTest::test_pickup_deadline_skips_closures_and_is_stored_in_utc` — Pemeriksaan data database gagal.
+- `ReservationTest::test_member_cannot_mark_ready_and_guest_catalog_has_translated_login` — Pemeriksaan data database gagal.
+- `ReservationTest::test_reserved_title_cannot_leave_a_hold_behind_by_checking_out_another_copy` — Pemeriksaan data database gagal.
+- `ReservationTest::test_pending_member_cannot_request_books` — Pemeriksaan data database gagal.
+- `SerialConcurrencyTest::test_simultaneous_receipts_cannot_exceed_expected_and_retry_is_idempotent` — Pemeriksaan data database gagal.
+- `SerialHistoryImportTest::test_preview_apply_retry_conflict_and_dates_are_preserved` — Pemeriksaan data database gagal.
+- `SerialHistoryImportTest::test_invalid_parent_rolls_back_entire_batch` — Pemeriksaan data database gagal.
+- `SerialManagementTest::test_schedule_preview_is_read_only_and_month_end_is_anchored` — Pemeriksaan data database gagal.
+- `SerialManagementTest::test_receipt_idempotency_quantity_bounds_void_and_replacement` — Pemeriksaan data database gagal.
+- `SerialManagementTest::test_closure_cancel_renew_and_history_preservation` — Pemeriksaan data database gagal.
+- `SerialManagementTest::test_pages_preview_export_and_report_reconcile_in_both_languages` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `ServiceReportsTest::test_recap_counts_distinct_titles_and_copies_without_join_fanout` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `ServiceReportsTest::test_excel_has_numeric_totals_freeze_filters_and_safe_text_cells` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `SsoTest::test_expired_staff_submission_returns_to_staff_login_without_mutating` — Pemeriksaan data database gagal.
+- `StaffExcelImportTest::test_queued_catalog_duplicates_are_detected_across_chunks_before_saving` — Pemeriksaan data database gagal.
+- `StaffExcelImportTest::test_bibliography_embedded_cover_and_private_preview` — Pemeriksaan data database gagal.
+- `StocktakeConcurrencyTest::test_independent_scans_and_review_are_serialized` — Pemeriksaan data database gagal.
+- `StocktakeOperationsTest::test_scope_resync_and_immutable_opening_metadata` — Pemeriksaan data database gagal.
+- `StocktakeOperationsTest::test_upload_deduplicates_and_retains_exceptions_without_partial_invalid_import` — Pemeriksaan data database gagal.
+- `StocktakeOperationsTest::test_supervisor_decisions_are_explicit_atomic_and_preserve_item_references` — Nilai atau tipe berbeda dari yang diharapkan.
+- `StocktakeOperationsTest::test_scanning_after_a_review_prevents_loss_and_requires_new_decision` — AssertionFailedError — detail nilai dan stack trace tersedia di log privat.
+- `StocktakeOperationsTest::test_bilingual_reports_filters_csv_print_and_frozen_metadata` — Pemeriksaan data database gagal.
+- `StocktakeOperationsTest::test_hold_blocks_withdrawal_and_later_unresolved_row_rolls_back_all_changes` — ExpectationFailedException — detail nilai dan stack trace tersedia di log privat.
+- `StocktakeTest::test_scan_review_finalize_and_bilingual_export` — Pemeriksaan data database gagal.
+- `StocktakeTest::test_unseen_and_unknown_require_notes_and_finalize_is_atomic` — Pemeriksaan data database gagal.
+- `StocktakeTest::test_changed_inventory_invalidates_previous_review` — Nilai atau tipe berbeda dari yang diharapkan.
+- `StocktakeTest::test_finalized_database_rows_cannot_be_changed` — Pemeriksaan data database gagal.
+- `StocktakeTest::test_librarian_cannot_finalize_but_supervisor_can` — Pemeriksaan data database gagal.
+- `StocktakeTest::test_scope_and_additions_are_reconciled` — Jumlah yang diharapkan 2, yang ditemukan 3.
+- `StocktakeTest::test_checkout_and_return_since_snapshot_require_reconciliation` — Nilai atau tipe berbeda dari yang diharapkan.
+- `TransactionIntegrityConcurrencyTest::test_parallel_repairs_use_fresh_preview_and_never_duplicate_history` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_projection_tracks_transactions_and_repair_preserves_canonical_data` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_stale_review_and_unauthorized_updates_are_rejected_in_both_languages` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_historical_classification_does_not_follow_later_catalog_or_member_edits` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_golden_finance_dataset_reconciles_payment_waiver_reversal_and_retry` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_daily_visits_include_zero_days_and_keep_affiliation_snapshot` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_review_is_actor_bound_expires_and_cannot_be_replayed` — Pemeriksaan data database gagal.
+- `TransactionIntegrityTest::test_corrupt_reporting_copy_cannot_corrupt_history_report` — Pemeriksaan data database gagal.
+
+<!-- actions-run=45565220698 final=1 -->
